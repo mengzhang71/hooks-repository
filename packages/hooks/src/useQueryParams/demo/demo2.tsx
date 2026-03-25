@@ -9,9 +9,7 @@ export default () => {
       status: 'all',
     },
     query: async (params) => {
-      setLogs((previous) =>
-        [`提交查询: 关键字=${params.keyword || '空'}, 状态=${params.status}`, ...previous].slice(0, 5)
-      );
+      setLogs((previous) => [`提交查询: 关键字=${params.keyword || '空'}, 状态=${params.status}`]);
     },
   });
 

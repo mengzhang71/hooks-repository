@@ -16,9 +16,7 @@ export default () => {
         return;
       }
 
-      setLogs((previous) =>
-        [`执行查询: 关键字=${params.keyword || '空'}, 页码=${params.page}`, ...previous].slice(0, 5)
-      );
+      setLogs((previous) => [`执行查询: 关键字=${params.keyword || '空'}, 页码=${params.page}`]);
     },
   });
 
@@ -30,7 +28,11 @@ export default () => {
         <button type="button" onClick={() => changeParams({ keyword: 'pipe', page: 1 })}>
           查询 pipe
         </button>
-        <button type="button" onClick={() => changeParams({ keyword: 'valve', page: 1 })} style={{ margin: '0 8px' }}>
+        <button
+          type="button"
+          onClick={() => changeParams({ keyword: 'valve', page: 1 })}
+          style={{ margin: '0 8px' }}
+        >
           查询 valve
         </button>
         <button type="button" onClick={() => changeParams({ page: queryParams.page + 1 })}>
