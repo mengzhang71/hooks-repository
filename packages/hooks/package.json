@@ -1,5 +1,5 @@
 {
-  "name": "encode-hooks",
+  "name": "x-hooks",
   "version": "0.0.1",
   "description": "React 业务 Hooks",
   "keywords": [
@@ -19,7 +19,7 @@
   "repository": "https://github.com/encode-studio-fe/encode-hooks",
   "homepage": "https://github.com/encode-studio-fe/encode-hooks",
   "scripts": {
-    "build": "gulp && webpack-cli"
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider gulp && cross-env NODE_OPTIONS=--openssl-legacy-provider webpack-cli"
   },
   "files": [
     "dist",
