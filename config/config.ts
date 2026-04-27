@@ -3,6 +3,8 @@ import { menus } from './hooks';
 const packages = require('../packages/hooks/package.json');
 
 export default {
+  publicPath: '/hooks-repository/',
+  base: '/hooks-repository/',
   exportStatic: {},
   nodeModulesTransform: {
     type: 'none',
@@ -21,8 +23,8 @@ export default {
   ],
   mode: 'site',
   title: 'encode react hooks',
-  favicon: '/avatar.png',
-  logo: '/logo.png',
+  favicon: '/hooks-repository/avatar.png',
+  logo: '/hooks-repository/logo.png',
   dynamicImport: {},
   manifest: {},
   hash: true,
@@ -37,7 +39,7 @@ export default {
       rel: 'stylesheet',
       href: 'https://unpkg.com/@alifd/theme-design-pro@0.6.2/dist/next-noreset.min.css',
     },
-    { rel: 'stylesheet', href: '/style.css' },
+    { rel: 'stylesheet', href: '/hooks-repository/style.css' },
   ],
   navs: [
     { title: '指南', path: '/guide' },
