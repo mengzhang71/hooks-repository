@@ -1,8 +1,22 @@
 import useLoad, { toR } from './useLoad';
 import useToggle from './useToggle';
 import useQueryParams from './useQueryParams';
+import useDebounce from './useDebounce';
+import useDebounceFn from './useDebounceFn';
+import useCookieState from './useCookieState';
+import useBoolean from './useBoolean';
+import useLatest from './useLatest';
+import useUnmount from './useUnmount';
+import useMemoizedFn from './useMemoizedFn';
 
 export { useLoad };
 export { useToggle };
 export { useQueryParams };
 export { toR };
+export { useDebounce };
+export { useDebounceFn };
+export { useCookieState };
+export { useBoolean };
+export { useLatest };
+export { useUnmount };
+export { useMemoizedFn };
